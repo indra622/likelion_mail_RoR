@@ -1,0 +1,28 @@
+<h1>이메일보내는프로그램입니다.</h1>
+
+
+<form action="/dettol/email_send" method="POST" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="exampleInputEmail1">수신자</label>
+    <input type="email" class="form-control" placeholder="likelion@example.com" name="receiver">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">참조</label>
+    <input type="email" class="form-control" placeholder="likelion@example.com" name="cc">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">제목</label>
+    <input type="text" class="form-control" placeholder="title" name="title">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">내용</label>
+    <textarea class="form-control" rows="3" name="content">content</textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" name="file_att">
+  </div>
+  
+  <button type="submit" class="btn btn-default">Send</button>
+    
+</form>
